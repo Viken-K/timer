@@ -58,7 +58,7 @@ function getMessage(language, messageKey) {
     },
 
     // Traditional Chinese
-        'en': {
+        'zh': {
       'timer-description': 'Timer expiring at',
       'timer-progress': '該計時器將於以下倒數結束後到期',
       'timer-finished': '該計時器現已到期',
