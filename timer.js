@@ -56,6 +56,19 @@ function getMessage(language, messageKey) {
       'minutes': 'inutesmay',
       'seconds': 'econdssay',
     },
+
+    // Traditional Chinese
+        'en': {
+      'timer-description': 'Timer expiring at',
+      'timer-progress': '該計時器將於以下倒數結束後到期',
+      'timer-finished': '該計時器現已到期',
+      'years': '年',
+      'months': '月',
+      'days': '日',
+      'hours': '時',
+      'minutes': '分',
+      'seconds': '秒',
+    },
   };
 
   // Special case:
