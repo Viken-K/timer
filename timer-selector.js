@@ -116,12 +116,13 @@ function getMessage(language, messageKey) {
 
     // Traditional Chinese
     'zh': {
-      'timer-description': 'Timer expiring at',
+      'timer-description': '計時結束於',
       'timer-progress': '該計時器將於以下倒數結束後到期',
       'timer-finished': '該計時器現已到期',
       'timer-type': '計時器類型',
       'timer-type-generic': '通用',
       'timer-type-deletion': '刪文',
+      'timer-type-translation': '翻譯',      
       'timer-type-ban': '封禁',
       'duration': '運行時間',
       'duration-1d': '1 天',
@@ -147,6 +148,7 @@ function getMessage(language, messageKey) {
       'css-extra': '自訂計時器CSS（選填）',
       'template': '輸出模板',
       'template-deletion': '%%iframe%%\n\n本文將會於上述計時器歸零，又仍未回上至超過-2分時被刪除，敬請留意。',
+      'template-translation': '%%iframe%%\n\n翻譯缺失測試文字'
       'template-ban': '%%iframe%%',
       'message-deletion-progress': '倒數計時器',
       'message-deletion-finished': '本文已超過符合被刪除期限',
@@ -358,6 +360,7 @@ function initializeMessages(language) {
   setMessage('timer-type-label', 'timer-type');
   setMessage('timer-type-generic-label', 'timer-type-generic');
   setMessage('timer-type-deletion-label', 'timer-type-deletion');
+  setMessage('timer-type-translation-label', 'timer-type-translation');  
   setMessage('timer-type-ban-label', 'timer-type-ban');
 
   setMessage('start-label', 'start-time');
@@ -409,6 +412,13 @@ function initializeHooks(language) {
     document.getElementById('message-finished').value = getMessage(language, 'message-deletion-finished');
     document.getElementById('template').value = getMessage(language, 'template-deletion');
   };
+
+  document.getElementById('timer-type-translation').onclick = function () {
+    document.getElementById('duration-1d').click();
+    document.getElementById('message-progress').value = getMessage(language, 'message-translation-progress');
+    document.getElementById('message-finished').value = getMessage(language, 'message-translation-finished');
+    document.getElementById('template').value = getMessage(language, 'template-translation');
+  };  
 
   document.getElementById('timer-type-ban').onclick = function () {
     document.getElementById('message-progress').value = getMessage(language, 'message-ban-progress');
