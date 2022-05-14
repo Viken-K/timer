@@ -58,7 +58,7 @@ function getMessage(language, messageKey) {
       'css-extra': 'Custom timer CSS (optional)',
       'template': 'Output template',
       'template-deletion': 'Beginning deletion vote at -10.\n\n%%iframe%%\n\nIf this article is over a year old, you are not the author, and you want to rewrite this article, request to do so in the [/forum/t-14018096/rewrite-request-thread#post-4916192 Rewrite Request Thread]. Please request permission from the author and make sure you copy the page source to your sandbox. **Do not reply to this post unless you are staff.**',
-      'template-translation': '%%iframe%%\n\n翻譯測試文字'     
+      'template-translation': '%%iframe%%\n\n翻譯測試文字',    
       'template-ban': '%%iframe%%',
       'message-deletion-progress': 'This page will be eligible for deletion in',
       'message-deletion-finished': 'This page has been eligible for deletion since',
@@ -107,7 +107,7 @@ function getMessage(language, messageKey) {
       'css-extra': 'Ustomcay imertay CSSYAY (optionalyay)',
       'template': 'Outputyay emplatetay',
       'template-deletion': 'Eginningbay eletionday otevay atyay -10.\n\n%%iframe%%\n\nIfyay isthay articleyay isyay overyay ayay earyay oldyay, ouyay areyay otnay ethay authoryay, andyay ouyay antway otay ewriteray isthay articleyay, equestray otay oday osay inyay ethay [/forum/t-14018096/rewrite-request-thread#post-4916192 Ewriteray Equestray Eadthray]. Easeplay equestray ermissionpay omfray ehtay authoryay andyay akemay uresay ouyay opycay ehtay agepay ourcesay otay ouryay andboxsay. **Oday otnay eplyray otay isthay ostay unlessyay ouyay areyay affstay.**',
-      'template-translation': '%%iframe%%\n\n翻譯測試文字'         
+      'template-translation': '%%iframe%%\n\n翻譯測試文字',         
       'template-ban': '%%iframe%%',
       'message-deletion-progress': 'Isthay agepay illway ebay eligibleyay orfay eletionday inyay',
       'message-deletion-finished': 'Isthay agepay has been eligible for deletion since',
@@ -156,7 +156,7 @@ function getMessage(language, messageKey) {
       'css-extra': '自訂計時器CSS（選填）',
       'template': '輸出模板',
       'template-deletion': '%%iframe%%\n\n本文將會於上述計時器歸零，又仍未回上至超過-2分時被刪除，敬請留意。',
-      'template-translation': '%%iframe%%\n\n翻譯測試文字'      
+      'template-translation': '%%iframe%%\n\n翻譯測試文字',      
       'template-ban': '%%iframe%%',
       'message-deletion-progress': '倒數計時器',
       'message-deletion-finished': '本文已超過符合被刪除期限',
