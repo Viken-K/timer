@@ -156,7 +156,7 @@ function getMessage(language, messageKey) {
       'css-extra': '自訂計時器CSS（選填）',
       'template': '輸出模板',
       'template-deletion': '%%iframe%%\n\n本文將會於上述計時器歸零，又仍未回上至超過-2分時被刪除，敬請留意。',
-      'template-translation': '%%iframe%%\n\n經比對現有的[[[SCP-XXXX]]]存在著許多翻譯上的缺失與錯譯，根據[http://scp-zh-tr.wikidot.com/translation-rules#toc7 本站翻譯守則第七條]所規範我們將給予72小時的改善期，若期限截止而未完成改善則將予以刪除處理，敬請留意。',
+      'template-translation': '%%iframe%%\n\n經比對現有的[/scp-xxxx SCP-XXXX]存在著許多翻譯上的缺失與錯譯，根據[http://scp-zh-tr.wikidot.com/translation-rules#toc7 本站翻譯守則第七條]所規範我們將給予72小時的改善期，若期限截止而未完成改善則將予以刪除處理，敬請留意。',
       'template-ban': '%%iframe%%',
       'message-deletion-progress': '倒數計時器',
       'message-deletion-finished': '本文已超過符合被刪除期限',
