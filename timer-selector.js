@@ -57,9 +57,12 @@ function getMessage(language, messageKey) {
       'css-extra': 'Custom timer CSS (optional)',
       'template': 'Output template',
       'template-deletion': 'Beginning deletion vote at -10.\n\n%%iframe%%\n\nIf this article is over a year old, you are not the author, and you want to rewrite this article, request to do so in the [/forum/t-14018096/rewrite-request-thread#post-4916192 Rewrite Request Thread]. Please request permission from the author and make sure you copy the page source to your sandbox. **Do not reply to this post unless you are staff.**',
+      'template-translation': '翻譯測試文字'
       'template-ban': '%%iframe%%',
       'message-deletion-progress': 'This page will be eligible for deletion in',
       'message-deletion-finished': 'This page has been eligible for deletion since',
+      'message-translaton-progress': '倒數計時器翻譯',
+      'message-translation-finished': '本翻譯已超過符合被刪除期限',          
       'message-ban-progress': 'This user\'s ban will elapse in',
       'message-ban-finished': 'This user\'s ban has been expired since',
       'build-timer': 'Build timer',
@@ -102,9 +105,12 @@ function getMessage(language, messageKey) {
       'css-extra': 'Ustomcay imertay CSSYAY (optionalyay)',
       'template': 'Outputyay emplatetay',
       'template-deletion': 'Eginningbay eletionday otevay atyay -10.\n\n%%iframe%%\n\nIfyay isthay articleyay isyay overyay ayay earyay oldyay, ouyay areyay otnay ethay authoryay, andyay ouyay antway otay ewriteray isthay articleyay, equestray otay oday osay inyay ethay [/forum/t-14018096/rewrite-request-thread#post-4916192 Ewriteray Equestray Eadthray]. Easeplay equestray ermissionpay omfray ehtay authoryay andyay akemay uresay ouyay opycay ehtay agepay ourcesay otay ouryay andboxsay. **Oday otnay eplyray otay isthay ostay unlessyay ouyay areyay affstay.**',
+      'template-translation': '翻譯測試文字'      
       'template-ban': '%%iframe%%',
       'message-deletion-progress': 'Isthay agepay illway ebay eligibleyay orfay eletionday inyay',
       'message-deletion-finished': 'Isthay agepay has been eligible for deletion since',
+      'message-translaton-progress': '倒數計時器翻譯',
+      'message-translation-finished': '本翻譯已超過符合被刪除期限',          
       'message-ban-progress': 'Isthay user\'syay anbay illway elapseyay inyay',
       'message-ban-finished': 'Isthay user\'syay anbay ashay eenbay expiredyay incesay',
       'build-timer': 'Uildbay imertay',
@@ -147,9 +153,12 @@ function getMessage(language, messageKey) {
       'css-extra': '自訂計時器CSS（選填）',
       'template': '輸出模板',
       'template-deletion': '%%iframe%%\n\n本文將會於上述計時器歸零，又仍未回上至超過-2分時被刪除，敬請留意。',
+      'template-translation': '翻譯測試文字'      
       'template-ban': '%%iframe%%',
       'message-deletion-progress': '倒數計時器',
       'message-deletion-finished': '本文已超過符合被刪除期限',
+      'message-translaton-progress': '倒數計時器翻譯',
+      'message-translation-finished': '本翻譯已超過符合被刪除期限',      
       'message-ban-progress': '該名用戶將在倒數結束後解除封禁',
       'message-ban-finished': '對該名用戶的封禁已到期',
       'build-timer': '產生計時器',
@@ -358,6 +367,7 @@ function initializeMessages(language) {
   setMessage('timer-type-label', 'timer-type');
   setMessage('timer-type-generic-label', 'timer-type-generic');
   setMessage('timer-type-deletion-label', 'timer-type-deletion');
+  setMessage('timer-type-translation-label', 'timer-type-translation');  
   setMessage('timer-type-ban-label', 'timer-type-ban');
 
   setMessage('start-label', 'start-time');
@@ -408,6 +418,13 @@ function initializeHooks(language) {
     document.getElementById('message-progress').value = getMessage(language, 'message-deletion-progress');
     document.getElementById('message-finished').value = getMessage(language, 'message-deletion-finished');
     document.getElementById('template').value = getMessage(language, 'template-deletion');
+  };
+
+  document.getElementById('timer-type-translation').onclick = function () {
+    document.getElementById('duration-1d').click();
+    document.getElementById('message-progress').value = getMessage(language, 'message-translaton-progress');
+    document.getElementById('message-finished').value = getMessage(language, 'message-translation-finished');
+    document.getElementById('template').value = getMessage(language, 'template-translation');
   };
 
   document.getElementById('timer-type-ban').onclick = function () {
