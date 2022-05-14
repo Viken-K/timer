@@ -424,7 +424,6 @@ function initializeHooks(language) {
   };
 
   document.getElementById('timer-type-translation').onclick = function () {
-    document.getElementById('duration-1d').click();
     document.getElementById('message-progress').value = getMessage(language, 'message-translaton-progress');
     document.getElementById('message-finished').value = getMessage(language, 'message-translation-finished');
     document.getElementById('template').value = getMessage(language, 'template-translation');
