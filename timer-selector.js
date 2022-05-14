@@ -421,7 +421,7 @@ function initializeHooks(language) {
   };
 
   document.getElementById('timer-type-deletion').onclick = function () {
-    document.getElementById('duration-3d').click();
+    document.getElementById('duration-1d').click();
     document.getElementById('message-progress').value = getMessage(language, 'message-deletion-progress');
     document.getElementById('message-finished').value = getMessage(language, 'message-deletion-finished');
     document.getElementById('template').value = getMessage(language, 'template-deletion');
