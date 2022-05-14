@@ -62,7 +62,7 @@ function getMessage(language, messageKey) {
       'template-ban': '%%iframe%%',
       'message-deletion-progress': 'This page will be eligible for deletion in',
       'message-deletion-finished': 'This page has been eligible for deletion since',
-      'message-translaton-progress': '倒數計時器翻譯',
+      'message-translation-progress': '倒數計時器翻譯',
       'message-translation-finished': '本翻譯已超過符合被刪除期限',          
       'message-ban-progress': 'This user\'s ban will elapse in',
       'message-ban-finished': 'This user\'s ban has been expired since',
@@ -111,7 +111,7 @@ function getMessage(language, messageKey) {
       'template-ban': '%%iframe%%',
       'message-deletion-progress': 'Isthay agepay illway ebay eligibleyay orfay eletionday inyay',
       'message-deletion-finished': 'Isthay agepay has been eligible for deletion since',
-      'message-translaton-progress': '倒數計時器翻譯',
+      'message-translation-progress': '倒數計時器翻譯',
       'message-translation-finished': '本翻譯已超過符合被刪除期限',          
       'message-ban-progress': 'Isthay user\'syay anbay illway elapseyay inyay',
       'message-ban-finished': 'Isthay user\'syay anbay ashay eenbay expiredyay incesay',
@@ -160,7 +160,7 @@ function getMessage(language, messageKey) {
       'template-ban': '%%iframe%%',
       'message-deletion-progress': '倒數計時器',
       'message-deletion-finished': '本文已超過符合被刪除期限',
-      'message-translaton-progress': '倒數計時器翻譯',
+      'message-translation-progress': '倒數計時器翻譯',
       'message-translation-finished': '本翻譯已超過符合被刪除期限',      
       'message-ban-progress': '該名用戶將在倒數結束後解除封禁',
       'message-ban-finished': '對該名用戶的封禁已到期',
@@ -424,7 +424,7 @@ function initializeHooks(language) {
   };
 
   document.getElementById('timer-type-translation').onclick = function () {
-    document.getElementById('message-progress').value = getMessage(language, 'message-translaton-progress');
+    document.getElementById('message-progress').value = getMessage(language, 'message-translation-progress');
     document.getElementById('message-finished').value = getMessage(language, 'message-translation-finished');
     document.getElementById('template').value = getMessage(language, 'template-translation');
   };
