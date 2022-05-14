@@ -36,7 +36,6 @@ function getMessage(language, messageKey) {
       'timer-type-ban': 'Ban',
       'duration': 'Duration',
       'duration-1d': '1 Day',
-      'duration-3d': '3 Day',
       'duration-1w': '1 Week',
       'duration-2w': '2 Weeks',
       'duration-1y': '1 Year',
@@ -85,8 +84,7 @@ function getMessage(language, messageKey) {
       'timer-type-translation': '翻譯',        
       'timer-type-ban': 'Anbay',
       'duration': 'Urationday',
-      'duration-1d': '1 Aday',
-      'duration-3d': '3 Day',      
+      'duration-1d': '1 Aday',     
       'duration-1w': '1 Eekway',
       'duration-2w': '2 Eeksway',
       'duration-1y': '1 Earyay',
@@ -135,8 +133,7 @@ function getMessage(language, messageKey) {
       'timer-type-translation': '翻譯',      
       'timer-type-ban': '封禁',
       'duration': '運行時間',
-      'duration-1d': '1 天',
-      'duration-3d': '3 天',      
+      'duration-1d': '1 天',   
       'duration-1w': '1 星期',
       'duration-2w': '2 星期',
       'duration-1y': '1 年',
@@ -382,7 +379,6 @@ function initializeMessages(language) {
 
   setMessage('duration-label', 'duration');
   setMessage('duration-1d-label', 'duration-1d');
-  setMessage('duration-3d-label', 'duration-3d');  
   setMessage('duration-1w-label', 'duration-1w');
   setMessage('duration-2w-label', 'duration-2w');
   setMessage('duration-1y-label', 'duration-1y');
